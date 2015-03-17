@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D87p" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="YodaSpeak" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +16,69 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="axu-uG-BNi">
+                                <rect key="frame" x="16" y="57" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter an English sentence:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4f1-Rg-Akh">
+                                <rect key="frame" x="16" y="28" width="204" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NMd-ap-Ur7">
+                                <rect key="frame" x="239" y="95" width="123" height="30"/>
+                                <state key="normal" title="Convert to Yodish">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="convert" destination="vXZ-lx-hvc" eventType="touchUpInside" id="oFe-EB-yJe"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dAo-fA-JkK">
+                                <rect key="frame" x="16" y="133" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Yoda.png" translatesAutoresizingMaskIntoConstraints="NO" id="Rsi-uk-syc">
+                                <rect key="frame" x="175" y="340" width="250" height="240"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" image="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="jIQ-gm-LgE"/>
+                                    <constraint firstAttribute="height" constant="240" id="k2N-M9-rDI"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="axu-uG-BNi" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="3RJ-gg-W9f"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4f1-Rg-Akh" secondAttribute="trailing" constant="364" id="7Sd-WW-a0O"/>
+                            <constraint firstItem="axu-uG-BNi" firstAttribute="top" secondItem="4f1-Rg-Akh" secondAttribute="bottom" constant="8" id="8ct-Ga-YT3"/>
+                            <constraint firstItem="dAo-fA-JkK" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="H3S-tx-qnO"/>
+                            <constraint firstItem="NMd-ap-Ur7" firstAttribute="top" secondItem="axu-uG-BNi" secondAttribute="bottom" constant="8" id="HvC-oP-3IZ"/>
+                            <constraint firstItem="4f1-Rg-Akh" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="PhD-0o-vBg"/>
+                            <constraint firstAttribute="centerY" secondItem="Rsi-uk-syc" secondAttribute="centerY" constant="-160" id="Qib-ZX-0it"/>
+                            <constraint firstItem="dAo-fA-JkK" firstAttribute="top" secondItem="NMd-ap-Ur7" secondAttribute="bottom" constant="8" id="d6A-ws-Gj6"/>
+                            <constraint firstItem="4f1-Rg-Akh" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="dSc-kq-OnF"/>
+                            <constraint firstAttribute="centerX" secondItem="Rsi-uk-syc" secondAttribute="centerX" id="h9U-bf-dSg"/>
+                            <constraint firstItem="axu-uG-BNi" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="j8r-Id-1ez"/>
+                            <constraint firstItem="dAo-fA-JkK" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="v9G-XO-Cll"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="englishSentence" destination="axu-uG-BNi" id="ZFy-3w-jrV"/>
+                        <outlet property="yodishSentence" destination="dAo-fA-JkK" id="Vcm-b7-u0N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="Yoda.png" width="1169" height="1221"/>
+    </resources>
 </document>

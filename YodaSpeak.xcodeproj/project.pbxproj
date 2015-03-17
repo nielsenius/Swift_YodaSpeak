@@ -13,6 +13,8 @@
 		340035C71AB71B6200577DFB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 340035C61AB71B6200577DFB /* Images.xcassets */; };
 		340035CA1AB71B6200577DFB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 340035C81AB71B6200577DFB /* LaunchScreen.xib */; };
 		340035D61AB71B6200577DFB /* YodaSpeakTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340035D51AB71B6200577DFB /* YodaSpeakTests.swift */; };
+		340035E01AB71F3C00577DFB /* Yoda.png in Resources */ = {isa = PBXBuildFile; fileRef = 340035DF1AB71F3C00577DFB /* Yoda.png */; };
+		340035E21AB720AE00577DFB /* YodishAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340035E11AB720AE00577DFB /* YodishAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		340035CF1AB71B6200577DFB /* YodaSpeakTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YodaSpeakTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		340035D41AB71B6200577DFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		340035D51AB71B6200577DFB /* YodaSpeakTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YodaSpeakTests.swift; sourceTree = "<group>"; };
+		340035DF1AB71F3C00577DFB /* Yoda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Yoda.png; sourceTree = "<group>"; };
+		340035E11AB720AE00577DFB /* YodishAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YodishAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 			children = (
 				340035BF1AB71B6200577DFB /* AppDelegate.swift */,
 				340035C11AB71B6200577DFB /* ViewController.swift */,
+				340035E11AB720AE00577DFB /* YodishAPI.swift */,
 				340035C31AB71B6200577DFB /* Main.storyboard */,
 				340035C61AB71B6200577DFB /* Images.xcassets */,
 				340035C81AB71B6200577DFB /* LaunchScreen.xib */,
@@ -90,6 +95,7 @@
 		340035BD1AB71B6200577DFB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				340035DF1AB71F3C00577DFB /* Yoda.png */,
 				340035BE1AB71B6200577DFB /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -161,6 +167,7 @@
 				TargetAttributes = {
 					340035B91AB71B6200577DFB = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = QJT5ATWZM4;
 					};
 					340035CE1AB71B6200577DFB = {
 						CreatedOnToolsVersion = 6.2;
@@ -192,6 +199,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				340035E01AB71F3C00577DFB /* Yoda.png in Resources */,
 				340035C51AB71B6200577DFB /* Main.storyboard in Resources */,
 				340035CA1AB71B6200577DFB /* LaunchScreen.xib in Resources */,
 				340035C71AB71B6200577DFB /* Images.xcassets in Resources */,
@@ -213,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				340035C21AB71B6200577DFB /* ViewController.swift in Sources */,
+				340035E21AB720AE00577DFB /* YodishAPI.swift in Sources */,
 				340035C01AB71B6200577DFB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,6 +345,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = YodaSpeak/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -346,6 +356,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = YodaSpeak/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
