@@ -18,9 +18,11 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+    // two text fields in the UI
     @IBOutlet var englishSentence: UITextField?
     @IBOutlet var yodishSentence: UITextField?
     
+    // one button to convert a sentence
     @IBAction func convert() {
         yodishSentence!.text = YodishAPI.request(englishSentence!.text)
     }

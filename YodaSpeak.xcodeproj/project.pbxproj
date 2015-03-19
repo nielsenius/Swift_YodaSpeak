@@ -416,6 +416,7 @@
 				340035DB1AB71B6200577DFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		340035DC1AB71B6200577DFB /* Build configuration list for PBXNativeTarget "YodaSpeakTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +425,7 @@
 				340035DE1AB71B6200577DFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
