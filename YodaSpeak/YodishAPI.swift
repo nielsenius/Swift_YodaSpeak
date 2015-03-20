@@ -10,6 +10,7 @@ import Foundation
 
 class YodishAPI {
     
+    // TODO: string blank, API offline, invalid response, API key tests
     class func request(sentence: String) -> NSString {
         // replaces spaces with + for API call
         var sentence = sentence.stringByReplacingOccurrencesOfString(" ", withString: "+", options: NSStringCompareOptions.LiteralSearch, range: nil)
