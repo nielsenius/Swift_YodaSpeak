@@ -42,7 +42,6 @@ class YodishAPI {
         } else {
             return reply!
         }
-        
     }
     
 }

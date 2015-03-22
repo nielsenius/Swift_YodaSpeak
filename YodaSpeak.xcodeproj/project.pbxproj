@@ -15,6 +15,9 @@
 		340035D61AB71B6200577DFB /* YodaSpeakTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340035D51AB71B6200577DFB /* YodaSpeakTests.swift */; };
 		340035E01AB71F3C00577DFB /* Yoda.png in Resources */ = {isa = PBXBuildFile; fileRef = 340035DF1AB71F3C00577DFB /* Yoda.png */; };
 		340035E21AB720AE00577DFB /* YodishAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340035E11AB720AE00577DFB /* YodishAPI.swift */; };
+		34B1D0591ABF3027004E38EA /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B1D0521ABF2FE0004E38EA /* Nimble.framework */; };
+		34B1D05A1ABF302B004E38EA /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B1D03F1ABF2FD1004E38EA /* Quick.framework */; };
+		34B1D05B1ABF3082004E38EA /* YodishAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340035E11AB720AE00577DFB /* YodishAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,6 +27,76 @@
 			proxyType = 1;
 			remoteGlobalIDString = 340035B91AB71B6200577DFB;
 			remoteInfo = YodaSpeak;
+		};
+		34B1D03E1ABF2FD1004E38EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34B1D0351ABF2FD1004E38EA /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DAEB6B8E1943873100289F44;
+			remoteInfo = "Quick-OSX";
+		};
+		34B1D0401ABF2FD1004E38EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34B1D0351ABF2FD1004E38EA /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DAEB6B991943873100289F44;
+			remoteInfo = "Quick-OSXTests";
+		};
+		34B1D0421ABF2FD1004E38EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34B1D0351ABF2FD1004E38EA /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DA5663E81A4C8D8500193C88;
+			remoteInfo = "QuickFocused-OSXTests";
+		};
+		34B1D0441ABF2FD1004E38EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34B1D0351ABF2FD1004E38EA /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5A5D117C19473F2100F6D13D;
+			remoteInfo = "Quick-iOS";
+		};
+		34B1D0461ABF2FD1004E38EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34B1D0351ABF2FD1004E38EA /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5A5D118619473F2100F6D13D;
+			remoteInfo = "Quick-iOSTests";
+		};
+		34B1D0481ABF2FD1004E38EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34B1D0351ABF2FD1004E38EA /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DA9876B21A4C70EB0004AA17;
+			remoteInfo = "QuickFocused-iOSTests";
+		};
+		34B1D0511ABF2FE0004E38EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34B1D04A1ABF2FE0004E38EA /* Nimble.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F1A74291940169200FFFC47;
+			remoteInfo = "Nimble-iOS";
+		};
+		34B1D0531ABF2FE0004E38EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34B1D04A1ABF2FE0004E38EA /* Nimble.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F1A74341940169200FFFC47;
+			remoteInfo = "Nimble-iOSTests";
+		};
+		34B1D0551ABF2FE0004E38EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34B1D04A1ABF2FE0004E38EA /* Nimble.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F925EAD195C0D6300ED456B;
+			remoteInfo = "Nimble-OSX";
+		};
+		34B1D0571ABF2FE0004E38EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34B1D04A1ABF2FE0004E38EA /* Nimble.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F925EB7195C0D6300ED456B;
+			remoteInfo = "Nimble-OSXTests";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -40,6 +113,8 @@
 		340035D51AB71B6200577DFB /* YodaSpeakTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YodaSpeakTests.swift; sourceTree = "<group>"; };
 		340035DF1AB71F3C00577DFB /* Yoda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Yoda.png; sourceTree = "<group>"; };
 		340035E11AB720AE00577DFB /* YodishAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YodishAPI.swift; sourceTree = "<group>"; };
+		34B1D0351ABF2FD1004E38EA /* Quick.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Quick.xcodeproj; path = ../../Vendor/Quick/Quick.xcodeproj; sourceTree = "<group>"; };
+		34B1D04A1ABF2FE0004E38EA /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = ../../Vendor/Nimble/Nimble.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +129,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34B1D05A1ABF302B004E38EA /* Quick.framework in Frameworks */,
+				34B1D0591ABF3027004E38EA /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +181,8 @@
 		340035D21AB71B6200577DFB /* YodaSpeakTests */ = {
 			isa = PBXGroup;
 			children = (
+				34B1D04A1ABF2FE0004E38EA /* Nimble.xcodeproj */,
+				34B1D0351ABF2FD1004E38EA /* Quick.xcodeproj */,
 				340035D51AB71B6200577DFB /* YodaSpeakTests.swift */,
 				340035D31AB71B6200577DFB /* Supporting Files */,
 			);
@@ -116,6 +195,30 @@
 				340035D41AB71B6200577DFB /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		34B1D0361ABF2FD1004E38EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				34B1D03F1ABF2FD1004E38EA /* Quick.framework */,
+				34B1D0411ABF2FD1004E38EA /* Quick-OSXTests.xctest */,
+				34B1D0431ABF2FD1004E38EA /* QuickFocused-OSXTests.xctest */,
+				34B1D0451ABF2FD1004E38EA /* Quick.framework */,
+				34B1D0471ABF2FD1004E38EA /* Quick-iOSTests.xctest */,
+				34B1D0491ABF2FD1004E38EA /* QuickFocused-iOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		34B1D04B1ABF2FE0004E38EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				34B1D0521ABF2FE0004E38EA /* Nimble.framework */,
+				34B1D0541ABF2FE0004E38EA /* NimbleTests.xctest */,
+				34B1D0561ABF2FE0004E38EA /* Nimble.framework */,
+				34B1D0581ABF2FE0004E38EA /* NimbleTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +289,16 @@
 			mainGroup = 340035B11AB71B6200577DFB;
 			productRefGroup = 340035BB1AB71B6200577DFB /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 34B1D04B1ABF2FE0004E38EA /* Products */;
+					ProjectRef = 34B1D04A1ABF2FE0004E38EA /* Nimble.xcodeproj */;
+				},
+				{
+					ProductGroup = 34B1D0361ABF2FD1004E38EA /* Products */;
+					ProjectRef = 34B1D0351ABF2FD1004E38EA /* Quick.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				340035B91AB71B6200577DFB /* YodaSpeak */,
@@ -193,6 +306,79 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		34B1D03F1ABF2FD1004E38EA /* Quick.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Quick.framework;
+			remoteRef = 34B1D03E1ABF2FD1004E38EA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		34B1D0411ABF2FD1004E38EA /* Quick-OSXTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Quick-OSXTests.xctest";
+			remoteRef = 34B1D0401ABF2FD1004E38EA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		34B1D0431ABF2FD1004E38EA /* QuickFocused-OSXTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "QuickFocused-OSXTests.xctest";
+			remoteRef = 34B1D0421ABF2FD1004E38EA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		34B1D0451ABF2FD1004E38EA /* Quick.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Quick.framework;
+			remoteRef = 34B1D0441ABF2FD1004E38EA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		34B1D0471ABF2FD1004E38EA /* Quick-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Quick-iOSTests.xctest";
+			remoteRef = 34B1D0461ABF2FD1004E38EA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		34B1D0491ABF2FD1004E38EA /* QuickFocused-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "QuickFocused-iOSTests.xctest";
+			remoteRef = 34B1D0481ABF2FD1004E38EA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		34B1D0521ABF2FE0004E38EA /* Nimble.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Nimble.framework;
+			remoteRef = 34B1D0511ABF2FE0004E38EA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		34B1D0541ABF2FE0004E38EA /* NimbleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = NimbleTests.xctest;
+			remoteRef = 34B1D0531ABF2FE0004E38EA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		34B1D0561ABF2FE0004E38EA /* Nimble.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Nimble.framework;
+			remoteRef = 34B1D0551ABF2FE0004E38EA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		34B1D0581ABF2FE0004E38EA /* NimbleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = NimbleTests.xctest;
+			remoteRef = 34B1D0571ABF2FE0004E38EA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		340035B81AB71B6200577DFB /* Resources */ = {
@@ -230,6 +416,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34B1D05B1ABF3082004E38EA /* YodishAPI.swift in Sources */,
 				340035D61AB71B6200577DFB /* YodaSpeakTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

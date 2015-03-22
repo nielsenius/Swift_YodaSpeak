@@ -6,31 +6,46 @@
 //  Copyright (c) 2015 Matthew Nielsen. All rights reserved.
 //
 
-import UIKit
-import XCTest
+import Quick
+import Nimble
+import YodaSpeak
 
-class YodaSpeakTests: XCTestCase {
-    
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
+class YodaSpeakSpec: QuickSpec {
+    override func spec() {
+        
+        describe("YodishAPI") {
+            
+            describe("error handling") {
+                
+                it("checks for empty input") {
+                    let blankRequest = YodishAPI.request("")
+                    expect(blankRequest).to(equal("ERROR: sentence provided is blank"))
+                    expect(blankRequest).notTo(equal(""))
+                }
+                
+                it("checks for a valid response") {
+                    expect(YodishAPI.request("This is a test.")).notTo(equal("ERROR: API request failed; make sure the URL is correct"))
+                }
+                
+                it("checks for correct API key") {
+                    expect(YodishAPI.request("This is a test.")).notTo(equal("ERROR: API key is not valid"))
+                }
+                
+            }
+            
+            describe("sentence conversion") {
+                
+                // NOTE: due to the random nature of the API, these tests may fail
+                it("converts a sentence from English to Yodish") {
+                    expect(YodishAPI.request("This is a test.")).to(equal("Test, this is.  "))
+                    expect(YodishAPI.request("My name is Yoda.")).to(equal("Yoda, my name is.  "))
+                    expect(YodishAPI.request("How is it going?")).to(equal("How going is it, hmm?  "))
+                }
+                
+            }
+            
         }
+        
     }
     
 }
