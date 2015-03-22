@@ -10,8 +10,12 @@ import Foundation
 
 class YodishAPI {
     
-    // TODO: string blank, API offline, invalid response, API key tests
     class func request(sentence: String) -> NSString {
+        // check that the sentence is not blank
+        if sentence == "" {
+            return "ERROR: sentence provided is blank"
+        }
+        
         // replaces spaces with + for API call
         var sentence = sentence.stringByReplacingOccurrencesOfString(" ", withString: "+", options: NSStringCompareOptions.LiteralSearch, range: nil)
         
@@ -25,9 +29,20 @@ class YodishAPI {
         
         // make a synchronous HTTP request
         var data = NSURLConnection.sendSynchronousRequest(request, returningResponse: &response, error: error)
-        var reply = NSString(data: data!, encoding: NSUTF8StringEncoding)
+        // ensure that the API call was successful
+        if data == nil {
+            return "ERROR: API request failed; make sure the URL is correct"
+        }
         
-        return reply!
+        // convert the returned data to a string
+        var reply = NSString(data: data!, encoding: NSUTF8StringEncoding)
+        // check that the returned data is valid
+        if reply == "{\"message\":\"Invalid Mashape Key\"}" {
+            return "ERROR: API key is not valid"
+        } else {
+            return reply!
+        }
+        
     }
     
 }
