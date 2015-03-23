@@ -10,6 +10,24 @@ import Quick
 import Nimble
 import YodaSpeak
 
+// extension to the String class to allow for bracket access to characters
+extension String {
+    
+    // access a one-character substring like this: "string"[0]
+    subscript (i: Int) -> String {
+        return String(Array(self)[i])
+    }
+    
+    // access a multi-character substring like this: "string"[0...2]
+    subscript(integerRange: Range<Int>) -> String {
+        let start = advance(startIndex, integerRange.startIndex)
+        let end = advance(startIndex, integerRange.endIndex)
+        let range = start..<end
+        return self[range]
+    }
+    
+}
+
 class YodaSpeakSpec: QuickSpec {
     override func spec() {
         
@@ -37,9 +55,9 @@ class YodaSpeakSpec: QuickSpec {
                 
                 // NOTE: due to the random nature of the API, these tests may fail
                 it("converts a sentence from English to Yodish") {
-                    expect(YodishAPI.request("This is a test.")).to(equal("Test, this is.  "))
-                    expect(YodishAPI.request("My name is Yoda.")).to(equal("Yoda, my name is.  "))
-                    expect(YodishAPI.request("How is it going?")).to(equal("How going is it, hmm?  "))
+                    expect(YodishAPI.request("This is a test.")[0...13]).to(equal("Test, this is."))
+                    expect(YodishAPI.request("My name is Yoda.")[0...16]).to(equal("Yoda, my name is."))
+                    expect(YodishAPI.request("How is it going?")[0...20]).to(equal("How going is it, hmm?"))
                 }
                 
             }

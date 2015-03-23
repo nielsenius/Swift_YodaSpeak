@@ -10,7 +10,7 @@ import Foundation
 
 class YodishAPI {
     
-    class func request(sentence: String) -> NSString {
+    class func request(sentence: String) -> String {
         // check that the sentence is not blank
         if sentence == "" {
             return "ERROR: sentence provided is blank"
@@ -40,7 +40,7 @@ class YodishAPI {
         if reply == "{\"message\":\"Invalid Mashape Key\"}" {
             return "ERROR: API key is not valid"
         } else {
-            return reply!
+            return String(reply!)
         }
     }
     
